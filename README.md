@@ -8,4 +8,4 @@ This website was created as a school project to practice HTML and CSS. I decided
 The goal was to keep the design clean and straightforward while learning how to do basic HTML.
 
 November 30, 2024  
-Dorian Ben
+_Dorian Ben_
