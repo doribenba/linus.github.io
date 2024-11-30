@@ -7,7 +7,7 @@
     <style>
         body {
             line-height: 1.4;
-            font-size: 14px;
+            font-size: 19px;
             max-width: 650px;
             margin: 50px auto;
             overflow-x: hidden;
@@ -19,15 +19,17 @@
     </style>
    <script>
     function checkScreenSize() {
-        if (window.innerWidth >= 470) { 
-            window.location.href = "index.html"; 
-        }
+    const viewportWidth = window.innerWidth;
+
+    const threshold = 470 * (100 / viewportWidth);  
+
+    if (viewportWidth >= 470) {
+        window.location.href = "index.html";
     }
+}
 
-    window.onload = checkScreenSize;
-
-    window.onresize = checkScreenSize;
-
+window.onload = checkScreenSize;
+window.onresize = checkScreenSize;
 </script>
 </head>
 <body>
@@ -38,7 +40,7 @@
             <i>A legendary programmer, inventor of Git, creator of the Linux kernel, more about him 
                 <a href="https://de.wikipedia.org/wiki/Linus_Torvalds" style="color: coral;">here</a>.</i>
         </div>
-        <img src="linus.png" style="width: 250px; height: auto; float: left; margin-bottom: 40px;">
+        <img src="linus.png" style="width: 250px; height: auto; float: left; margin-bottom: 50px;">
         <br>
         <br>
         <strong>My name is Linus, and I am your god</strong>

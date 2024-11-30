@@ -16,15 +16,17 @@
     </style>
     <script>
         function checkScreenSize() {
-            if (window.innerWidth <= 470) {  
-                window.location.href = "mobile.html"; 
-            }
+        const viewportWidth = window.innerWidth;
+
+        const threshold = 470 * (100 / viewportWidth);  
+
+        if (viewportWidth <= 470) {
+            window.location.href = "mobile.html";
         }
+    }
 
-        window.onload = checkScreenSize;
-
-  
-        window.onresize = checkScreenSize;
+    window.onload = checkScreenSize;
+    window.onresize = checkScreenSize;
     </script>
 </head>
 <body>

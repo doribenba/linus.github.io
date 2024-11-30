@@ -19,15 +19,17 @@
     </style>
     <script>
         function checkScreenSize() {
-            if (window.innerWidth >= 470) {  
-                window.location.href = "contact.html"; 
-            }
+        const viewportWidth = window.innerWidth;
+
+        const threshold = 470 * (100 / viewportWidth);  
+
+        if (viewportWidth >= 470) {
+            window.location.href = "contact.html";
         }
+    }
 
-        window.onload = checkScreenSize;
-
-  
-        window.onresize = checkScreenSize;
+    window.onload = checkScreenSize;
+    window.onresize = checkScreenSize;
     </script>
 </head>
 
