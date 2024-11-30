@@ -7,17 +7,20 @@
     <style>
         body {
             line-height: 1.4;
-            font-size: 16px;
+            font-size: 14px;
             max-width: 650px;
             margin: 50px auto;
-            padding: 10px;
-            font-family: inherit;
+            overflow-x: hidden;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 30px;
         }
+
     </style>
     <script>
         function checkScreenSize() {
-            if (window.innerWidth <= 470) {  
-                window.location.href = "mobile_contact.html"; 
+            if (window.innerWidth >= 470) {  
+                window.location.href = "contact.html"; 
             }
         }
 
@@ -37,7 +40,7 @@
             <a href="mailto:doribenbass@gmail.com" style="color: coral;">doribenbass@gmail.com</a>.
         </p>
         <p>For other inquiries, also email me at the same address.</p>
-        <i><a href="./" style="color: coral;">Back</a></i>
+        <i><a href="./mobile" style="color: coral;">Back</a></i>
     </div>
 </body>
 
